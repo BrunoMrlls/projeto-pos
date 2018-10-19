@@ -1,0 +1,35 @@
+http://www.ciceroednilson.com.br/java-criando-um-web-service-rest-com-jersey-e-jpa/
+
+add 1 pessoa
+
+{		"id": null,
+        "endereco": {
+        	"id": 4,
+            "logradouro": "Passagem KKKKKKKKKKKKK",
+            "numero": "14000",
+            "bairro": "aaaaaa",
+            "cep": "66113666",
+            "uf": "PA"
+        },
+        "nome": "Nome teste 3",
+        "cpfCnpj": "00022200063",
+        "email": "aaaa",  
+        "contato": "bbbb"
+}
+
+alter 1 pessoa
+
+{		"id": 3,
+        "endereco": {
+        	"id": 4,
+            "logradouro": "Passagem KKKKKKKKKKKKK",
+            "numero": "14000",
+            "bairro": "aaaaaa",
+            "cep": "66113666",
+            "uf": "PA"
+        },
+        "nome": "Nome teste 3",
+        "cpfCnpj": "00022200063",
+        "email": "aaaa",  
+        "contato": "bbbb"
+}
