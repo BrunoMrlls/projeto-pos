@@ -3,11 +3,8 @@ package br.com.pos.repository;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 import br.com.pos.model.Pessoa;
-import br.com.pos.model.Produto;
 import br.com.pos.utils.EntityManagerFabrica;
 
 public class PessoaRepository {

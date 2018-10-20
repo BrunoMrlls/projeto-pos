@@ -36,4 +36,14 @@ public class ProdutoRepository {
 		em.getTransaction().commit();
 		return p;
 	}
+	
+	public void excluir(Integer id) {
+
+		Produto p = getProdutoById(id);
+ 
+		em.getTransaction().begin();
+		em.remove(p);
+		em.getTransaction().commit();
+		
+	}
 }

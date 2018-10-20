@@ -2,6 +2,7 @@ package br.com.pos.model;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,8 +23,8 @@ public class Pessoa implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	@JoinColumn(name="id_ende")
-	@OneToOne
+	@JoinColumn(name="id_ende", unique=true)
+	@OneToOne(cascade=CascadeType.ALL)
 	private Endereco endereco;
 	
 	@Column(name="nome")
